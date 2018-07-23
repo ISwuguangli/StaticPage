@@ -1,0 +1,678 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>华北理工大学体育部</title>
+	<style type="text/css">
+
+		/*头部样式*/
+		.head {
+			position: fixed;
+			left: 0px;
+			right: 0px;
+			background-color: white;
+		}
+		.head_title {
+			background-image: url(head.gif);
+			margin-left: 19%;
+			margin-right: 19%;
+			background-size: 1180px 100px;
+			background-repeat: no-repeat;
+			height: 100px;
+			background-color: white;
+		}
+		.head_input {
+			width: 200px;
+			height: 30px;
+			margin-left: 75%;
+			margin-top: 3%;
+			border-radius: 8px;
+		}
+		.head_search {
+			width: 30px;
+			height: 20px;
+			/*background-image: url(search.gif);*/
+			position: fixed;
+			right: 24%;
+			top: 6%;
+		}
+		.head_nav {
+			background-color: #ffd101;
+			margin-left: 19%;
+			margin-right: 19%;
+			height: 40px;
+		}
+		.nav_item_first {
+			padding-left: 8%;
+			font-size: x-large;
+		}
+		.nav_item_first a:link {
+			color: black;
+			text-decoration: none;
+		}
+		.nav_item_first a:hover {
+			color: white;
+		}
+		.nav_item {
+			padding-left: 4%;
+			font-size: x-large;
+		}
+		.nav_item a:link {
+			color: black;
+			text-decoration: none;
+		}
+		.nav_item a:hover {
+			color: white;
+		}
+		.nav_item a:visited {
+			color: black;
+		}
+		/*轮播图一*/
+		.blank {
+			width: 1903px;
+			height: 140px;
+			background-color: white;
+		}
+		.carousel1 {
+			background-image: url("carousel_back.gif");
+			margin-left: 19.2%;
+			margin-right: 18.8%;
+			background-size: 1180px 500px;
+			background-repeat: no-repeat;
+			height: 500px;
+		}
+		.scroll {
+			width: 960px;
+			height: 420px;
+		}
+		.carousel_box {
+			width: 960px;
+			height: 420px;
+			margin-left: 10%;
+			overflow: hidden;
+		}
+		.ol {
+			position: absolute;
+			left: 1300px;
+			top: 540px;
+		}
+		.li1 {
+			position: absolute;
+			left: 1300px;
+			top: 540px;
+			display: inline;
+			width: 15px;
+			height: 15px;
+			background-color: white;
+			border-radius: 10px;
+		}
+		.li2 {
+			position: absolute;
+			left: 1320px;
+			top: 540px;
+			width: 15px;
+			height: 15px;
+			background-color: white;
+			border-radius: 10px;
+		}
+		.li3 {
+			position: absolute;
+			left: 1340px;
+			top: 540px;
+			width: 15px;
+			height: 15px;
+			background-color: white;
+			border-radius: 10px;
+		}
+		.carousel1_image {
+			width: 960px;
+			height: 420px;
+		}
+		.gif1 {
+			margin-left: 0px;
+			cursor: pointer;
+		}
+		.gif2 {
+			margin-left: 0px;
+			cursor: pointer;
+		}
+		.gif3 {
+			margin-left: 0px;
+			cursor: pointer;
+		}
+
+		/*公告板*/
+		.board {
+			background-image: url(b1.gif);
+			margin-left: 19.1%;
+			background-size: 1172px 400px;
+			background-repeat: no-repeat;
+			height: 400px;
+			cursor: pointer;
+		}
+		.board1 {
+				/*height: 100px;
+				width: 205px;
+				background-color: white;
+				position: absolute;
+				top: 680px;
+				right: 1230px;*/
+				height: 100px;
+    width: 205px;
+    padding-left: 860px;
+    padding-top: 50px;
+    /*background-color: white;
+    position: absolute;
+    top: 700px;
+    left: 1230px;*/
+			}
+			.board1_title a:link {
+			color: #002266;
+			text-decoration: none;
+		}
+		.board1_title a:hover {
+			color: #002266;
+		}
+		.board1_title a:visited {
+			color: #002266;
+		}
+			.board2 {
+				/*height: 150px;
+				width: 205;
+				background-color: white;
+				position: absolute;
+				top: 730px;
+				right: 1230;*/
+				height: 150px;
+    width: 205px;
+    padding-left: 860px;
+    padding-top: 70px;
+    /*background-color: white;
+    position: absolute;
+    top: 880px;
+    left: 1230px;*/
+			}
+			.board1_character {
+				font-size: large;
+				font-weight: 600;
+				color: #bfbfbf;
+			}
+			.board1_character:hover {
+				font-size: x-large;
+			}
+			.board1_title {
+				font-size: x-large;
+				font-weight: 500;
+				color: #002266;
+			}
+			.board1_title:hover {
+				font-size: xx-large;
+			}
+			.board1_font {
+				font-size: medium;
+				color: #003399;
+				font-weight: 500;
+			}
+			/*.board1_font:hover {
+				font-size: large;
+			}*/
+
+			.carousel2 {
+				margin-left: 19%;
+				margin-right: 19%;
+				height: 750px;
+				background-image: url('background_03.gif');
+				background-size: cover;
+			}
+			.c21 {
+				/*background-image: url(c21.gif);*/
+				width: 275px;
+				height: 390px;
+				position: absolute;
+				top: 1332px;
+				left: 450px;
+			}
+			.c21_title {
+				color: #021357;
+				font-size: xx-large;
+				padding-top: 380px;
+    padding-left: 150px;
+    display: inline;
+				/*margin-left: 25px;
+				margin-top: 100px;*/
+			}
+			.c21_title1 {
+				color: #021357;
+				/*margin-left: 70px;
+				font-size: 180%;*/
+				/*display: inline;*/
+				font-size: xx-large;
+				    display: inline;
+    padding-left: 190px;
+			}
+			.c21_place {
+				color: #acaca8;
+				font-size: x-large;
+				    padding-left: 150px;
+    /*padding-top: 80px;*/
+        /*padding-top: 80px;*/
+    display: inline;
+			}
+			.c21_more {
+				color: white;
+				color: white;
+				font-size: x-large;
+				/*margin-top: 85px;
+				margin-left: 75px;*/
+				display: inline;
+				padding-left: 100px;
+			}
+			.c21_more a:hover {
+				color: white;
+				font-size: xx-large;
+			}
+			.c21_more a:link {
+				color: white;
+				text-decoration: none;
+			}
+			.c21box{
+				padding-top: 380px;
+				/*display: inline;*/
+			}
+			.c22box{
+				padding-top: 1px;
+				/*display: */
+			}
+			.c23box{
+				padding-top: 30px;
+			}
+			.c22 {
+				/*background-image: url('c22.gif');*/
+				width: 275px;
+				height: 390px;
+				display: inline;
+    padding-left: 100px;
+			}
+			.c22_title {
+				color: #021357;
+				font-size: xx-large;
+				padding-left: 100px;
+				display: inline;
+				/*margin-left: 25px;
+				margin-top: 100px;*/
+			}
+			.c22_title1 {
+				/*color: #021357;
+				margin-left: 70px;
+				font-size: xx-large;*/
+				color: #021357;
+    /* margin-left: 70px; */
+    font-size: xx-large;
+    display: inline;
+    padding-left: 200px;
+			}
+			.c22_place {
+				color: #acaca8;
+				font-size: x-large;
+				padding-left: 100px;
+				display: inline;
+				/*margin-top: 25px;
+				margin-left: 35px;*/
+			}
+			.c22_more {
+				color: white;
+				color: white;
+				font-size: x-large;
+				display: inline;
+				padding-left: 200px;
+				/*margin-top: 85px;
+				margin-left: 75px;*/
+			}
+			.c22_more a:hover {
+				color: white;
+				font-size: xx-large;
+			}
+			.c22_more a:link {
+				color: white;
+				text-decoration: none;
+			}
+			.c23 {
+				/*background-image: url(c23.gif);*/
+				width: 275px;
+				height: 390px;
+				position: absolute;
+				top: 1312px;
+				left: 800px;
+			}
+			.c23_title {
+				color: #021357;
+				font-size: xx-large;
+				/*margin-left: 25px;
+				margin-top: 100px;*/
+				    display: inline;
+    padding-left: 90px;
+			}
+			.c23_title1 {
+				/*color: #021357;
+				margin-left: 70px;
+				font-size: xx-large;*/
+				    color: #021357;
+    /* margin-left: 70px; */
+    font-size: xx-large;
+    display: inline;
+    padding-left: 200px;
+			}
+			.c23_place {
+				color: white;
+				font-size: x-large;
+				display: inline;
+				padding-left: 110px;
+				/*margin-top: 25px;
+				margin-left: 35px;*/
+			}
+			.c23_more {
+				color: white;
+				color: white;
+				font-size: x-large;
+				/*margin-top: 85px;
+				margin-left: 75px;*/
+				display: inline;
+				padding-left: 200px;
+			}
+			.c23_more a:hover {
+				color: white;
+				font-size: xx-large;
+			}
+			.c23_more a:link {
+				color: white;
+				text-decoration: none;
+			}
+			.c24box {
+				padding-top:90px;
+				padding-left: 90px;
+			}
+			.c24{
+				position: absolute;
+				top: 1562px;
+				left: 400px;
+				width: 32px;
+				height: 40px;
+				background-image: url(c24.gif);
+			}
+			.c25{
+				position: absolute;
+			top: 1570px;
+			left: 1485px;
+			width: 34px;
+			height: 35px;
+			background-image: url(c25.gif);
+			}
+
+			.footer {
+				/*width: 100%;*/
+				height: 220px;
+				background-image: url('background_04.gif');
+				margin-left: 19%;
+				margin-right: 19%;
+				/*background-size: cover;*/
+			}
+			.left{
+				 position: absolute;
+				top: 1890px;
+				left: 500px;
+				width: 300px;
+				height: 200px;}
+
+			.medium{
+				position: absolute;
+				top: 1890px;
+				left: 750px;
+				width: 300px;
+				height: 200px;
+			}
+
+			.right55{
+				position: absolute;
+				top: 1890px;
+				left: 1000px;
+				width: 300px;
+				height: 200px;
+			}
+
+			.dleft {
+				font-size: x-large;
+				color: #ffcc00;
+			}
+
+			.dleft:hover{
+				font-size: xx-large;
+			}
+			.dleft1 {
+				font-size: large;
+				color: white;
+			}
+			.dleft1:hover {
+				font-size: x-large;
+			}
+			.dleft2 {
+				font-size: large;
+				color: white;
+			}
+			.dleft2:hover{
+				font-size: x-large;
+			}
+
+
+	</style>
+</head>
+<body>
+
+	<!-- 头部导航栏 -->
+	<div class="head">
+		<div class="head_title">
+			<input type="text" name="" class="head_input" id="input">
+			<div onclick="search()"><a href="#"><img src="search.gif" class="head_search"></a></div>
+			<!-- <div class="head_search" onclick="search()"></div> -->
+		</div>
+		<div class="head_nav">
+			<span class="nav_item_first"><a href="www.baidu.com">部门概况</a></span>
+			<span class="nav_item"><a href="www.baidu.com">焦点关注</a></span>
+			<span class="nav_item"><a href="www.baidu.com">体育教学</a></span>
+			<span class="nav_item"><a href="all.html">校代表队</a></span>
+			<span class="nav_item"><a href="www.baidu.com">科学研究</a></span>
+			<span class="nav_item"><a href="www.baidu.com">体测中心</a></span>
+			<span class="nav_item"><a href="www.baidu.com">校际体育</a></span>
+		</div>
+	</div>
+
+	<!-- 第一个轮播图 -->
+	<div class="blank"></div>
+	<div class="carousel1" id="carousel1">
+		<!-- <div class="ol">
+			<div class="li1"></div>
+			<div class="li2"></div>
+			<div class="li3"></div>
+		</div> -->
+		<div class="scroll" >
+			<div class="carousel_box" id="scroll" onclick="cTimer()">
+				<table>
+					<tr>
+						<td><img src="1.gif" class="gif1" id="gif1" ></td>
+						<td><img src="2.gif" class="gif2" id="gif2" ></td>
+						<td><img src="3.gif" class="gif3" id="gif3" ></td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+	<!-- <div class="ol"> -->
+		<div class="li1" id="li1"></div>
+		<div class="li2" id="li2"></div>
+		<div class="li3" id="li3"></div>
+	<!-- </div> -->
+	<!-- 公告板 -->
+	<div class="board">
+		<div class="board1">
+			<div class="board1_character">2017/2/27</div>
+			<div class="board1_title"><a href="all.html">河北赛区大中学生足球联赛</a></div>
+			<div class="board1_font">我校代表队所在的校园组共有19支普通本科院校足球队参加比赛，通过教练员……</div>
+		</div>
+		<div class="board2">
+					<div class="board1_character">2017/2/27</div>
+					<div class="board1_title">河北赛区大中学生足球联赛</div>
+					<div class="board1_font">我校代表队所在的校园组共有19支普通本科院校足球队参加比赛，通过教练员……</div>
+				</div>
+	</div>
+
+<div class="carousel2">
+				<!-- <div id="c21"> -->
+					<div class="c21box">
+					<div class="c21_title">河北省大中学生</div><div class="c22_title">河北省大中学生</div>
+					<div class="c23_title">河北省大中学生</div>
+					</div>
+
+					<div class="c22box">
+					<div class="c21_title1">武术比赛</div><div class="c22_title1">武术比赛</div>
+					<div class="c23_title1">武术比赛</div>
+				</div>
+
+					<div class="c23box">
+					<div class="c21_place">举办地：体育馆一层</div><div class="c23_place">举办地：体育馆一层</div>
+					<div class="c22_place">举办地：体育馆一层</div>
+					
+				</div>
+
+				<div class="c24box">
+					<div class="c21_more"><a href="www.baidu.com">了解更多  ></a></div><div class="c22_more"><a href="www.baidu.com">了解更多  ></a></div>
+					<div class="c23_more"><a href="www.baidu.com">了解更多  ></a></div>
+				</div>
+				<!-- </div> -->
+				<!-- <div  id="c22"> -->
+					
+					
+					
+					
+				<!-- </div> -->
+				<!-- <div  id="c23"> -->
+					
+					<!-- div class="c23_title1">武术比赛</div>
+ -->
+					
+					
+				<!-- </div> -->
+				<div class="c24" onclick="c24()"></div>
+				<div class="c25" onclick="c25()"></div>
+			</div>
+
+<div class="footer">
+				<div class="left">
+					<div class="dleft">友情链接</div>
+					<div class="dleft1">体育馆预约系统</div>
+					<div class="dleft2">体测成绩查询系统</div>
+				</div>
+				<div class="medium">
+					<div class="dleft">站内导航</div>
+					<div class="dleft1">实时赛事跟踪</div>
+					<div class="dleft2">校园体育官方微信</div>
+				</div>
+				<div class="right55">
+					<div class="dleft">联系我们</div>
+					<div class="dleft1">QQ:XXXXXXXXXX</div>
+					<div class="dleft2">TEL:XXXXXXX</div>
+				</div>
+			</div>
+
+	<script type="text/javascript">
+
+		//导航栏搜索功能
+		function search(){
+			var text = document.getElementById("input");
+				if (text.value=="部门概况") {
+					window.location.href="href1.html";
+				}
+				if (text.value == "焦点关注") {
+					window.location.href="href2.html";
+				}
+				if (text.value == "体育教学") {
+					window.location.href="href3.html";
+				}
+				if (text.value == "校代表队") {
+					window.location.href="href4.html";
+				}
+				if (text.value == "科学研究") {
+					window.location.href="href.html";
+				}
+				if (text.value == "体测中心") {
+					window.location.href="href5.html";
+				}
+				if (text.value == "校际体育") {
+					window.location.href="href6.html";
+				}
+		}
+
+		//轮播图一初始化
+		window.onload = function(){
+			document.getElementById("gif1").style.marginLeft = "0px";
+			document.getElementById("li1").style.backgroundColor = "#ffd101";
+		}
+
+		//gif1
+		function gif1Show(){
+			document.getElementById("gif1").style.marginLeft = "0px";
+			document.getElementById("gif2").style.marginLeft = "0px";
+			document.getElementById("gif3").style.marginLeft = "0px";
+			document.getElementById("li1").style.backgroundColor="#ffd101";
+			document.getElementById("li2").style.backgroundColor="#ffffff";
+			document.getElementById("li3").style.backgroundColor="#ffffff";
+		}
+
+		//gif2
+		function gif2Show(){
+			document.getElementById("gif1").style.marginLeft = "-982px";
+			document.getElementById("gif2").style.marginLeft = "0px";
+			document.getElementById("gif3").style.marginLeft = "0px";
+			document.getElementById("li1").style.backgroundColor="#ffffff";
+			document.getElementById("li2").style.backgroundColor="#ffd101";
+			document.getElementById("li3").style.backgroundColor="#ffffff";
+		}
+
+		//gif3
+		function gif3Show(){
+			document.getElementById("gif1").style.marginLeft = "-982px";
+			document.getElementById("gif2").style.marginLeft = "-982px";
+			document.getElementById("gif3").style.marginLeft = "0px";
+			document.getElementById("li1").style.backgroundColor="#ffffff";
+			document.getElementById("li2").style.backgroundColor="#ffffff";
+			document.getElementById("li3").style.backgroundColor="#ffd101";
+		}
+
+		var timer1;
+		var timer2;
+		var timer3;
+		var i=1;
+		//轮播图切换
+		timer1 = setInterval(gif1Show,2000);
+		timer2 = setInterval(gif2Show,4000);
+		timer3 = setInterval(gif3Show,6000);
+
+		function cTimer(){
+			if (i>3) {
+				i=1;
+				setInterval(gif1Show,2000);
+				setInterval(gif2Show,4000);
+				setInterval(gif3Show,6000);
+			};
+			if (i==1) {
+				window.clearInterval(timer1);
+			};
+			if (i==2) {
+				window.clearInterval(timer2);
+			};
+			if (i==3) {
+				window.clearInterval(timer3);
+			};
+			i++;
+		}
+
+	</script>
+</body>
+</html>
