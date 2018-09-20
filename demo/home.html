@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<script type="text/javascript"></script>
+	<style type="text/css">
+		.content {
+			margin-left: 10%;
+			margin-right: 10%;
+		}
+		.head-title {
+			height: 100px;
+			width: 100%;
+			background-color: #488bb8;
+		}
+		.title-font {
+			padding-left: 5%;
+			color: #FFFFFF;
+			font-size: xx-large;
+		}
+		.head-nav {
+			height: 40px;
+			width: 100%;
+			background-color: #488bb8;
+		}
+		.board {
+			width: 100%;
+			height: 200px;
+		}
+		.lost {
+			width: 50%;
+			height: 1200px;
+			/*background-image: url("lost.jpg");*/
+			background-color: #00FF00;
+			float: left;
+		}
+		.search {
+			width: 50%;
+			height: 1200px;
+			float: right;
+			background-image: url("search.jpg");
+			background-repeat: no-repeat;
+		}
+		.head-nav-lost {
+			display: inline;
+		}
+		.head-nav-search {
+			display: inline;
+		}
+		.head-nav-login {
+			margin-left: 83%;
+			border-radius: 5px;
+		}
+		.lost-write {
+			width: 97%;
+			height: 100px;
+			margin-left: 1%;
+			margin-top: 1%;
+			margin-right: 1%;
+			border-radius: 10px;
+		}
+		.lost-button {
+			width: 15%;
+			height: 30px;
+			margin-top: 1%;
+			margin-left: 2%;
+			border-radius: 5px;
+		}
+		.lost-write-title {
+			width: 30%;
+			margin-left: 1%;
+			margin-top: 1%;
+			margin-right: 1%;
+			margin-bottom: 1%;
+			border-radius: 5px;
+		}
+		.lost-write-author {
+			width: 20%;
+			margin-left: 1%;
+			margin-right: 1%;
+			margin-bottom: 1%;
+			margin-top: 1%;
+			border-radius: 5px;
+		}
+		.search-write {
+			width: 97%;
+			height: 100px;
+			margin-left: 1%;
+			margin-top: 1%;
+			margin-right: 1%;
+			border-radius: 10px;
+		}
+		.search-button {
+			width: 15%;
+			height: 30px;
+			margin-top: 1%;
+			margin-left: 2%;
+			border-radius: 5px;
+		}
+		.search-write-title {
+			width: 30%;
+			margin-left: 1%;
+			margin-top: 1%;
+			margin-right: 1%;
+			margin-bottom: 1%;
+			border-radius: 5px;
+		}
+		.search-write-author {
+			width: 20%;
+			margin-left: 1%;
+			margin-right: 1%;
+			margin-bottom: 1%;
+			margin-top: 1%;
+			border-radius: 5px;
+		}
+		.label-class {
+			margin-left: 1%;
+		}
+		.swiper-text {
+			width: 100%;
+			background-color: #0000FF;
+			height: 30px;
+		}
+	</style>
+</head>
+<body>
+	<div class="content">
+		<div class="head-title">
+			<!-- <div class="title-font">南洋理工学院失物招领平台</div> -->
+		</div>
+		<div class="head-nav">
+			<input type="button" name="" class="head-nav-login" onclick="reLogin()" value="登录" id="buttonLogin">
+		</div>
+		<div class="swiper-text"></div>
+		<div class="board">
+			<div class="lost">
+				<label class="label-class">失物招领标题</label>
+				<input type="text" name="" class="lost-write-title" id="lostWriteTitle" placeholder="">
+				<label class="label-class">失误招领发布人</label>
+				<input type="text" name="" class="lost-write-author" id="lostWriteAuthor" placeholder="">
+				<div>
+					<label class="label-class">失误招领主要内容</label>
+				</div>
+				<div>
+					<input type="text" name="" class="lost-write" id="lostWrite">
+				</div>
+				<input type="button" name="" value="发布失物招领" class="lost-button" id="lostButton" onclick="lostClick()">
+				<div id="lostAddPara">
+					<p>失误招领：书包</p>
+					<p>发布人：杨柒柒</p>
+					<p>9月16日下午在校园超市捡到萝莉牌书包，请联系杨柒柒QQ：123456</p>
+					<p>**********************************************************</p>
+					<p>失物招领：杯子</p>
+					<p>发布人：吴喵喵</p>
+					<p>9月16日下午在校园超市捡到蓝色杯子一个，请联系吴喵喵QQ：654321</p>
+					<p>**********************************************************</p>
+				</div>
+			</div>
+			<!-- <div class="search">
+				<label class="label-class">寻物启事标题</label>
+				<input type="text" name="" class="search-write-title" id="searchWriteTitle" placeholder="">
+				<label class="label-class">寻物启事发布人</label>
+				<input type="text" name="" class="search-write-author" id="searchWriteAuthor" placeholder="">
+				<div>
+					<label class="label-class">寻物启事主要内容</label>
+				</div>
+				<div>
+					<input type="text" name="" class="search-write" id="searchWrite">
+				</div>
+
+				<input type="button" name="" value="发布寻物启事" class="search-button" id="searchButton" onclick="searchClick()">
+				<div id="searchAddPara">
+					<p>寻物启事：杯子</p>
+					<p>发布人：陈呆呆</p>
+					<p>9月16日下午在校园超市丢失黑色书包一个，请联系陈呆呆QQ：112211</p>
+					<p>**********************************************************</p>
+					<p>寻物启事：杯子</p>
+					<p>发布人：吴喵喵</p>
+					<p>9月16日下午在校园超市丢失红色杯子一个，请联系吴喵喵QQ：654321</p>
+					<p>**********************************************************</p>
+				</div> -->
+			</div>
+		</div>
+		<div class="bottom"></div>
+	</div>
+</body>
+	<script type="text/javascript">
+
+		function reLogin(){
+			var ReSta= "NOT";
+			location.href="login.html?"+"state="+encodeURI(ReSta);
+		}
+
+		var locationURL = location.href;
+		var n1 = locationURL.length;
+		var n2 = locationURL.indexOf("=");
+		var sta = decodeURI(locationURL.substr(n2+1, n1-n2));
+
+		if (sta == "TURE") {
+			var test1 = document.getElementById("buttonLogin");
+			test1.value = "已登录";
+		}
+
+		function searchClick() {
+
+			var locationURL = location.href;
+			var n1 = locationURL.length;
+			var n2 = locationURL.indexOf("=");
+			var sta = decodeURI(locationURL.substr(n2+1, n1-n2));
+			
+
+			if (sta == "TURE") {
+			var element = document.getElementById("searchAddPara");
+
+			var title = document.getElementById("searchWriteTitle");
+			var titleText = "寻物启事" + title.value;
+			var titlePara = document.createElement("p");
+			var titleNode = document.createTextNode(titleText);
+			titlePara.appendChild(titleNode);
+			element.appendChild(titlePara);
+
+			var author = document.getElementById("searchWriteAuthor");
+			var authorText = author.value;
+			var authorPara = document.createElement("p");
+			var authorNode = document.createTextNode(authorText);
+			authorPara.appendChild(authorNode);
+			element.appendChild(authorPara);
+
+			var richText = document.getElementById("searchWrite");
+			var mainText = richText.value;
+			var contentPara = document.createElement("p");
+			var contentNode = document.createTextNode(mainText);
+			contentPara.appendChild(contentNode);
+			element.appendChild(contentPara);
+
+			var line = "**********************************************************";
+			var linePara = document.createElement("p");
+			var lineNode = document.createTextNode(line);
+			linePara.appendChild(lineNode);
+			element.appendChild(linePara);
+
+			title.value = " ";
+			author.value = " ";
+			richText.value = " ";
+			}else {
+				alert("请登陆后再发布启事");
+				var ReSta= "NOT";
+				location.href="login.html?"+"state="+encodeURI(ReSta);
+			}
+		}
+
+		function lostClick() {
+			var locationURL = location.href;
+			var n1 = locationURL.length;
+			var n2 = locationURL.indexOf("=");
+			var sta = decodeURI(locationURL.substr(n2+1, n1-n2));
+
+
+		if (sta == "TURE") {
+			var test1 = document.getElementById("buttonLogin");
+
+			var element = document.getElementById("lostAddPara");
+
+			var title = document.getElementById("lostWriteTitle");
+			var titleText = "失物招领" + title.value;
+			var titlePara = document.createElement("p");
+			var titleNode = document.createTextNode(titleText);
+			titlePara.appendChild(titleNode);
+			element.appendChild(titlePara);
+
+			var author = document.getElementById("lostWriteAuthor");
+			var authorText = author.value;
+			var authorPara = document.createElement("p");
+			var authorNode = document.createTextNode(authorText);
+			authorPara.appendChild(authorNode);
+			element.appendChild(authorPara);
+
+			var richText = document.getElementById("lostWrite");
+			var mainText = richText.value;
+			var contentPara = document.createElement("p");
+			var contentNode = document.createTextNode(mainText);
+			contentPara.appendChild(contentNode);
+			element.appendChild(contentPara);
+
+			var line = "**********************************************************";
+			var linePara = document.createElement("p");
+			var lineNode = document.createTextNode(line);
+			linePara.appendChild(lineNode);
+			element.appendChild(linePara);
+
+			title.value = " ";
+			author.value = " ";
+			richText.value = " ";
+			}else {
+				alert("请登陆后再发布启事");
+				var ReSta= "NOT";
+				location.href="login.html?"+"state="+encodeURI(ReSta);
+			}
+		}
+	</script>
+</html>
