@@ -73,7 +73,7 @@
 					if ((user==studentArray[i])&&number==numberArray[i]){
 						alert("登录成功");
 						var ReStaFirst= "TURE";
-						location.href="lost.html?"+"state="+encodeURI(ReStaFirst);
+						location.href="found.html?"+"state="+encodeURI(ReStaFirst);
 
 						var locationURL = location.href;
 						var n1 = locationURL.length;
@@ -81,7 +81,7 @@
 						var sta = decodeURI(locationURL.substr(n2+1, n1-n2));
 						if (sta == "NOT") {
 						var ReSta= "TURE";
-						location.href="lost.html?"+"state="+encodeURI(ReSta);
+						location.href="found.html?"+"state="+encodeURI(ReSta);
 						}
 					}
 				}
